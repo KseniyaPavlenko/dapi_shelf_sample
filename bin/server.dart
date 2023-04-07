@@ -10,7 +10,8 @@ void main(List<String> arguments) async {
 
   final handler = Pipeline()
       .addMiddleware(logRequests())
-      .addMiddleware(handleCors(origins: ["http://localhost:8686"]))
+      .addMiddleware(handleCors(
+          origins: ["http://localhost:8686", "https://daylog-web.web.app"]))
       .addHandler(router);
 
   await serve(handler, hostName, port);
