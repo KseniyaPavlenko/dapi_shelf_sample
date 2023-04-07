@@ -3,7 +3,7 @@
 # @BASE_URL=http://localhost:8080
 
 # Heroku
-@BASE_URL=https://daylog-app.herokuapp.com
+@BASE_URL=https://app.onedaylog.org
 
 # Cloud Run
 # @BASE_URL=https://day-log-weavxpuaiq-lm.a.run.app
@@ -22,7 +22,7 @@ POST {{BASE_URL}}/api/v1/auth/login
 Content-Type: application/json
 
 {   
-    "login": "alex6",
+    "login": "alex8",
     "password": "123"
 }
 
